@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -182,4 +183,51 @@ footer {
 
 .nuestras-tiendas button:hover {
   background-color: #0056b3;
+}
+
+@media (min-width: 578px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .menu {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .rayas {
+    height: 100%;
+    width: 10rem;
+  }
+  .cabecera {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    gap: 20px;
+  }
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: grey;
+  }
+  .logo-pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-pie img {
+    display: block;
+    width: 30%;
+  }
 }/*# sourceMappingURL=style.css.map */
