@@ -1,11 +1,27 @@
+$primary-color: white;
+$Second-color:grey;
+
+@mixin rounded-corners($radius: 5px) {
+  border-radius: $radius;
+}
+
+$theme: light;
+
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #333;
+  @if $theme == light {
+    color: #333;
+  } @else {
+    background-color: black;
+    color: white;
+  }
 }
 
 header {
-  background-color:grey;
+  background-color:$Second-color;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -23,7 +39,7 @@ header {
 #imagenlogo {
   width: 25%;
   height: auto;
-  border-radius: 5%;
+  @include rounded-corners(5%);
 }
 
 .rayas{
@@ -95,7 +111,7 @@ display: none;
 
 .Producto {
   border: 1px solid #ddd;
-  border-radius: 5%;
+  @include rounded-corners(5%);
   overflow: hidden;
   text-align: center;
   transition: box-shadow 0.3s;
@@ -174,9 +190,9 @@ footer {
   padding: 2%;
   border: none;
   background-color: #007bff;
-  color: #fff;
+  color: $primary-color;
   cursor: pointer;
-  border-radius: 5%;
+  @include rounded-corners(5%);
   transition: background-color 0.3s;
 }
 
@@ -216,13 +232,13 @@ footer {
   
   .container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   footer{
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
-    background-color:grey ;
+    background-color:$Second-color ;
   }
   
   .logo-pie{
@@ -257,9 +273,9 @@ footer {
     display: none;
   }
   .menu ul a:hover {
-    background-color: grey;
+    background-color: $Second-color;
     color: goldenrod;
-    border-radius: 5%;
+    @include rounded-corners(5%);
     padding: 0.75rem;
   }
   .iconos{
@@ -271,7 +287,7 @@ footer {
 
   }
   .Producto{
-    background-color: white;
+    background-color: $primary-color;
   }
 
   .container{
@@ -317,7 +333,7 @@ footer {
   
   .logo-pie img {
     width: 150px;
-    border-radius: 7%;
+    @include rounded-corners(7%);
   }
   
   .nuestras-tiendas {
@@ -349,8 +365,8 @@ footer {
     padding: 10px 20px;
     border: none;
     background-color: #007bff;
-    color: white;
-    border-radius: 5px;
+    color: $primary-color;
+    @include rounded-corners(5%);
     cursor: pointer;
     transition: background-color 0.3s;
   }
