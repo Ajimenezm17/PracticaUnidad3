@@ -3,18 +3,30 @@
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-}
-.cabecera{
+    background-color: purple;
+  }
+  
+  .cabecera {
     display: inline;
-}
-#imagenlogo{
+  }
+  
+  #imagenlogo {
     width: 35%;
-}
-
-.enlaces{
+  }
+  
+  .enlaces {
     text-decoration: none;
-}
-
-.iconos{
+  }
+  
+  .iconos {
     width: 7%;
-}
+  }
+  .menu{
+    justify-content: baseline;
+    
+  }
+
+.buscar{
+    display: none;
+    background-color: black;
+}  

@@ -1,22 +1,203 @@
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color:grey;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
 }
 
 .cabecera {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 #imagenlogo {
-  width: 35%;
+  width: 80px;
+  height: auto;
 }
 
-.enlaces {
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.rayas img {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu ul a {
   text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu ul a:hover {
+  color: blue;
 }
 
 .iconos {
-  width: 7%;
-}/*# sourceMappingURL=style.css.map */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.iconos img {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+.buscar a {
+  text-decoration: none;
+  color: aquamarine;
+  font-weight: bold;
+}
+.main{
+  padding: 5%;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.top button {
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.top button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.Producto {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  padding: 5%;
+}
+
+.Producto:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Producto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-producto {
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+.overlay-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.sobre-quimera {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.sobre-quimera a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.sobre-quimera a:hover {
+  color: #007bff;
+}
+
+.logo-pie img {
+  width: 60px;
+  height: auto;
+}
+
+.nuestras-tiendas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.nuestras-tiendas h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nuestras-tiendas button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nuestras-tiendas button:hover {
+  background-color: #0056b3;
+}
