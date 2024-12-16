@@ -5,59 +5,41 @@ body {
 }
 
 header {
-  background-color:grey;
-  padding: 10px;
+  background-color: grey;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #ddd;
 }
 
 .cabecera {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   width: 100%;
 }
 
 #imagenlogo {
-  width: 80px;
+  width: 25%;
   height: auto;
+  border-radius: 5%;
 }
 
-.menu {
+.rayas {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 
 .rayas img {
-  width: 25px;
+  width: 12%;
   height: auto;
   cursor: pointer;
 }
 
-.menu ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
 .menu ul a {
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.menu ul a:hover {
-  color: blue;
+  display: none;
 }
 
 .iconos {
@@ -68,7 +50,7 @@ header {
 }
 
 .iconos img {
-  width: 20px;
+  width: 9%;
   height: auto;
   cursor: pointer;
 }
@@ -78,7 +60,8 @@ header {
   color: aquamarine;
   font-weight: bold;
 }
-.main{
+
+.main {
   padding: 5%;
 }
 
@@ -91,7 +74,7 @@ header {
 }
 
 .top button {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   border: 1px solid #007bff;
   background-color: #fff;
   color: #007bff;
@@ -112,7 +95,7 @@ header {
 
 .Producto {
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 5%;
   overflow: hidden;
   text-align: center;
   transition: box-shadow 0.3s;
@@ -130,12 +113,12 @@ header {
 }
 
 .text-producto {
-  padding: 10px;
+  padding: 1rem;
   background-color: #f8f8f8;
 }
 
 .overlay-text {
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
   font-weight: bold;
   margin: 0;
@@ -143,25 +126,25 @@ header {
 
 footer {
   background-color: #f8f8f8;
-  padding: 20px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
   border-top: 1px solid #ddd;
 }
 
 .sobre-quimera {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   align-items: center;
 }
 
 .sobre-quimera a {
   text-decoration: none;
   color: #333;
-  font-size: 14px;
+  font-size: 1em;
   transition: color 0.3s;
 }
 
@@ -170,34 +153,33 @@ footer {
 }
 
 .logo-pie img {
-  width: 60px;
-  height: auto;
+  display: none;
 }
 
 .nuestras-tiendas {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   align-items: center;
 }
 
 .nuestras-tiendas h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
 }
 
 .nuestras-tiendas button {
-  padding: 10px 15px;
+  padding: 2%;
   border: none;
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 5%;
   transition: background-color 0.3s;
 }
 
 .nuestras-tiendas button:hover {
   background-color: #0056b3;
-}
+}/*# sourceMappingURL=style.css.map */
